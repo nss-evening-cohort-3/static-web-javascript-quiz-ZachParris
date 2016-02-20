@@ -15,7 +15,7 @@ document.getElementById("treeChar").onkeyup = function() {
 	tree.treeChar = document.getElementById("treeChar").value;
 }
 
-// button to create tree in console
+//
 document.getElementById("treeButt").onclick = function() {
 	if(tree.height.length < 1) {
 		alert("Enter a number");
@@ -24,7 +24,6 @@ document.getElementById("treeButt").onclick = function() {
 		alert("Enter a single character");
 	}
 	treeGrower(tree);
-	// console.log(tree.height, tree.treeChar)
 
 }
 

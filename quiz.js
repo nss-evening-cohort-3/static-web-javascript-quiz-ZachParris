@@ -15,7 +15,10 @@ document.getElementById("treeChar").onkeyup = function() {
 	tree.treeChar = document.getElementById("treeChar").value;
 }
 
-//
+document.getElementById("treeStuff").onsubmit = function(){
+  	return false;
+  }
+//This is my user input button
 document.getElementById("treeButt").onclick = function() {
 	if(tree.height.length < 1) {
 		alert("Enter a number");
@@ -24,8 +27,14 @@ document.getElementById("treeButt").onclick = function() {
 		alert("Enter a single character");
 	}
 	treeGrower(tree);
-
 }
+//this is my clear button
+// document.getElementById("clr").onclick = function(){
+// 	return 
+	
+// }
+  	
+  
 
 //write for loop that displays char adding two each time
 function treeGrower(treeObject) {
